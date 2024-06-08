@@ -1,0 +1,634 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="confirmation/confirmation.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Mimi's Salon</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+</head>
+  <body data-spy="scroll" data-target=".navbar" data-offset="50">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <!-- Navigation Bar Start--> 
+    <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">
+            <img src="./assets/logo.png" alt="Logo" height="90px" class="d-inline-block align-text-top">
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+              <li class="nav-item ">
+                <a class="nav-link active" aria-current="page" href="#" onclick="scrollToSection('services')"><h5>Services</h5></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#" onclick="scrollToSection('artist')"><h5>Our Artists</h5></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#" onclick="scrollToSection('contact')"><h5>Contact Us</h5></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#" onclick="scrollToSection('bookNow')"><h5>Book Now!</h5></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>  
+    <!-- Navigation Bar End--> 
+
+<!--Homepage image and text Start-->
+    <img src="./assets/Homepage.png" class="home-img" alt="Homepage" >
+  
+  <div class="container">
+    <div class="text-center">
+        <h2 class="heading">Refreshing and Affordable</h2>
+        <h2 class="heading">Beauty at your Fingertips</h2>
+        <button type="button" class="btn btn-primary btn-lg" onclick="scrollToSection('bookNow')">Book Now</button>
+        <h4 class="heading3">Hair Styling | Lash & Brow | Nail Care | Facials</h4>
+    </div>
+  </div>
+<!--Homepage image and text End-->
+
+<!-- Gallery Section of the site Start-->
+
+<div class="section bg-light">
+    <div class="container2">
+        <div class="row justify-content-left mb-1">
+            <div class="col-md-8">
+                <h1 class="heading2 md-2"> Gallery </h1>
+                <p class=" galleryDescription mb-2 lead"> Discover the stunning hair styling, exquisite nail art,
+                    rejuvenating facials, and flawless lash and brow services offered at 
+                    Mimi's Salon.</p>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Gallery Section of the site End--> 
+
+<!-- Gallery Carousel Start-->
+
+  <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel" [interval]="'0'" >
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <div class="cards-wrapper">
+            <div class="card" style="width: 18rem;">
+                <img class="card-img-top" src="./assets/brows.png" alt="Card image cap">
+              </div>
+              <div class="card" style="width: 18rem;">
+                <img class="card-img-top" src="./assets/Lash 1.png" alt="Card image cap">
+              </div>
+              <div class="card" style="width: 18rem;">
+                <img class="card-img-top" src="./assets/facial.png" alt="Card image cap">
+              </div>
+        </div>
+       
+      </div>
+      <div class="carousel-item">
+        <div class="cards-wrapper">
+            <div class="card" style="width: 18rem;">
+                <img class="card-img-top" src="./assets/hair styling1.png" alt="Card image cap">
+              </div>
+              <div class="card" style="width: 18rem;">
+                <img class="card-img-top" src="./assets/Nails 1.png" alt="Card image cap">
+              </div>
+              <div class="card" style="width: 18rem;">
+                <img class="card-img-top" src="./assets/nails 2.png" alt="Card image cap">
+              </div>
+        
+        </div>
+       
+      </div>
+
+    </div>
+    <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="sr-only">Next</span>
+    </a>
+
+
+  </div>
+<!-- Gallery Carousel End-->
+
+<!-- Services Start-->
+ <div class="section" id="services">
+  <div class="container3">
+    <img src="./assets/Rectangle.png" alt="Service-Background" class="service-bkg">
+    <div class="text-left">
+      <h1 class="heading4">Services</h1>
+    </div>
+    <div class="card-align-service">
+      <div class="cards-wrapper">
+        <div class="cardSer bg-transparent border-0 text-center" style="width: 18rem;">
+          <img class="card-img-top" src="./assets/Facial Service.png" alt="Facial-Service">
+          <div class="card-body">
+            <p class="card-text">Reveal your radiant glow with rejuvenating facials that will leave you feeling refreshed.</p>
+          </div>
+        </div>
+        <div class="cardSer bg-transparent border-0 text-center" style="width: 18rem;">
+          <img class="card-img-top" src="./assets/Hair Styling Service.png" alt="Hair-Service">
+          <div class="card-body">
+            <p class="card-text">Elevate your look with expert hair styling. From cuts to color, we craft stunning styles to suit your vibe</p> 
+          </div>
+        </div>
+
+        <div class="cardSer bg-transparent border-0 text-center" style="width: 18rem;">
+          <img class="card-img-top" src="./assets/Lash Service.png" alt="Lash-Service">
+          <div class="card-body">
+            <p class="card-text">Enhance your natural beauty with flawless brows sculpted to perfection and long full lashes that will last for days</p>
+          </div>
+        </div>
+
+        <div class="cardSer bg-transparent border-0 text-center" style="width: 18rem;">
+          <img class="card-img-top" src="./assets/NailCare Service.png" alt="Nail-Service">
+          <div class="card-body">
+            <p class="card-text">Pamper yourself with luxurious nail care. From chic manis to indulgent pedis that will leave you feeling fabulous.</p>
+          </div>
+        </div>
+  
+      </div>
+      <button type="button" class="btn btn-secondaryy" data-bs-toggle="modal" data-bs-target="#exampleModal">
+        View Prices
+      </button>
+      
+      <!-- Modal -->
+      <div class="modal fade modal-lg" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true" style="color: #B09494;"!important>
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">Services</h5>
+            </div>
+            <div class="modal-body" style="color: #B09494;"!important>
+              <img src="./assets/Prices.png" alt="Price" class="price-img">
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            </div>
+          </div>
+        </div>
+      </div>
+     
+    </div>
+    
+
+  </div>
+  </div>
+  <!-- Services End-->
+
+  <!-- Artists Start -->
+<div class="section" id="artist">
+  <h1 class="heading5">Our Artists</h1>
+
+  <div class="container7">
+    <div class="row">
+
+      <div class="col">
+        
+        <div class="cardArt text-center" style="width: 18rem;">
+        <img class="card-img-top" src="./assets/Brenda+1 1.png" alt="brenda">
+        <div class="card-body">
+          <h5 class="card-title">Brenda Gonzalez</h5>
+        
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="about-text">
+            Hi, I'm Brenda, and I've been with Mimi's Salon for seven years. As a licensed beauty technician, 
+            I specialize in hairstyling, coloring, skincare, and nails. I stay updated with the latest trends and techniques 
+            to ensure my clients look and feel their best. At Mimi's Salon, we create a welcoming and relaxing environment, 
+            and I'm dedicated to helping you shine with every visit.
+
+        </div>
+            
+      </div>
+  
+      <div class="col">
+
+        <h3>Brenda's Work</h3>
+        
+        <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel" [interval]="'0'" >
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <div class="cards-wrapper">
+                  <div class="cardArtcar" style="width: 18rem;">
+                      <img class="card-img-top" src="./assets/brows.png" alt="Card image cap">
+                    </div>
+                    <div class="cardArtcar" style="width: 18rem;">
+                      <img class="card-img-top" src="./assets/nails 10.avif" alt="Card image cap">
+                    </div>
+                    <div class="cardArtcar" style="width: 18rem;">
+                      <img class="card-img-top" src="./assets/facial4.avif"  alt="Card image cap">
+                    </div>
+              </div>
+             
+            </div>
+            <div class="carousel-item">
+              <div class="cards-wrapper">
+                  <div class="cardArtcar" style="width: 18rem;">
+                      <img class="card-img-top" src="./assets/hair4.avif" alt="Card image cap">
+                    </div>
+                    <div class="cardArtcar" style="width: 18rem;">
+                      <img class="card-img-top" src="./assets/hair6.avif" alt="Card image cap">
+                    </div>
+                    <div class="cardArtcar" style="width: 18rem;">
+                      <img class="card-img-top" src="./assets/nails4.avif" alt="Card image cap">
+                    </div>
+              
+              </div>
+             
+            </div>
+      
+          </div>
+          
+        </div>
+
+
+
+      </div>
+
+      <div class="w-100"></div>
+      <div class="col">
+        <div class="cardArt text-center" style="width: 18rem;">
+          <img class="card-img-top" src="./assets/Elianna+2 1.png" alt="ellie">
+            <div class="card-body">
+              <h5 class="card-title">Ellie Howard</h5>
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <div class="about-text">
+        Hi, I'm Ellie, and I've been part of Mimi's Salon for two years. As I embark on my journey in the beauty industry, 
+        I focus on hairstyling, coloring, skincare, and nails. I’m committed to learning and growing, always eager to master 
+        the latest trends and techniques. At Mimi's Salon, 
+        we pride ourselves on a warm and relaxing atmosphere, and I'm dedicated to making sure you leave feeling refreshed and fabulous.
+
+      </div>
+
+
+    </div>
+      <div class="col">
+        
+        <h3>Ellie's Work</h3>
+        
+        <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel" [interval]="'0'" >
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <div class="cards-wrapper">
+                  <div class="cardArtcar" style="width: 18rem;">
+                      <img class="card-img-top" src="./assets/lash3.avif" alt="Card image cap">
+                    </div>
+                    <div class="cardArtcar" style="width: 18rem;">
+                      <img class="card-img-top" src="./assets/lash4.avif" alt="Card image cap">
+                    </div>
+                    <div class="cardArtcar" style="width: 18rem;">
+                      <img class="card-img-top" src="./assets/facial7.avif" alt="Card image cap">
+                    </div>
+              </div>
+             
+            </div>
+            <div class="carousel-item">
+              <div class="cards-wrapper">
+                  <div class="cardArtcar" style="width: 18rem;">
+                      <img class="card-img-top" src="./assets/hair7.avif" alt="Card image cap">
+                    </div>
+                    <div class="cardArtcar" style="width: 18rem;">
+                      <img class="card-img-top" src="./assets/nails9.avif" alt="Card image cap">
+                    </div>
+                    <div class="cardArtcar" style="width: 18rem;">
+                      <img class="card-img-top" src="./assets/facial.png" alt="Card image cap">
+                    </div>
+              
+              </div>
+             
+            </div>
+      
+          </div>
+          
+        </div>
+
+      </div>
+      <div class="w-100"></div>
+
+
+    <div class="col"><div class="cardArt text-center" style="width: 18rem;">
+      <img class="card-img-top" src="./assets/Jordan+1 1.png" alt="kelly">
+      <div class="card-body">
+        <h5 class="card-title">Kelly Reid</h5>
+      </div>
+    </div>
+  </div>
+  <div class="col">
+    <div class="about-text">
+      Hi, I'm Kelly, the owner and manager of Mimi's Salon. With years of experience in the beauty industry,
+       I specialize in all aspects of hairstyling, coloring, skincare, and nails. My passion is ensuring that every client 
+       receives top-notch service in a warm and welcoming environment. At Mimi's Salon, 
+      we strive to make each visit a relaxing and enjoyable experience, and I'm dedicated to helping you look and feel your absolute best.
+    </div>
+  </div>
+    <div class="col">
+      
+      <h3>Kelly's Work</h3>
+        
+        <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel" [interval]="'0'" >
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <div class="cards-wrapper">
+                  <div class="cardArtcar" style="width: 18rem;">
+                      <img class="card-img-top" src="./assets/hair styling1.png" alt="Card image cap">
+                    </div>
+                    <div class="cardArtcar" style="width: 18rem;">
+                      <img class="card-img-top" src="./assets/nails5.avif" alt="Card image cap">
+                    </div>
+                    <div class="cardArtcar" style="width: 18rem;">
+                      <img class="card-img-top" src="./assets/nails6.avif" alt="Card image cap">
+                    </div>
+              </div>
+             
+            </div>
+            <div class="carousel-item">
+              <div class="cards-wrapper">
+                  <div class="cardArtcar" style="width: 18rem;">
+                      <img class="card-img-top" src="./assets/nails 2.png" alt="Card image cap">
+                    </div>
+                    <div class="cardArtcar" style="width: 18rem;">
+                      <img class="card-img-top" src="./assets/hair8.avif" alt="Card image cap">
+                    </div>
+                    <div class="cardArtcar" style="width: 18rem;">
+                      <img class="card-img-top" src="./assets/hair6.avif" alt="Card image cap">
+                    </div>
+              
+              </div>
+             
+            </div>
+      
+          </div>
+          
+        </div>
+
+    </div>
+    </div>
+  </div>
+</div>
+  <!-- Artists End -->
+  
+  
+  <!-- Contact Start -->
+
+  <div class="section" id="contact">
+    <img src="./assets/Contact.png" class="contact-img w-100" alt="Contact">
+
+  </div>
+
+  <!-- Contact End -->
+
+  <!-- Booking Start -->
+
+  <section class="contact" id="bookNow">
+    <div class="container-lg">
+      <h1 class="heading5"> Book Now</h1>
+      <div class="row no-gutters">
+
+        <div class="col-6 col-md-4" style="height: 350px">
+          <div class="cardbook" style="width: 18rem;">
+            <img class="card-img-top" src="./assets/hours.png" alt="Card image cap">
+          </div>
+        </div>
+
+        <div class="col-12 col-sm-6 col-md-8">
+          <form>
+          <div class="form-row row justify-content-center">
+            <div class="form-group col-md-6" style="color: #735656;">
+              <label for="inputFirst4" style="color: #735656;">First Name</label>
+              <input type="text" class="form-control" id="inputFirst4" placeholder="First Name" style="color: #735656;">
+            </div>
+            <div class="form-group col-md-6" style="color: #735656;">
+              <label for="inputLast" style="color: #735656;">Last Name</label>
+            <input type="text" class="form-control" id="inputLast" placeholder="Last Name" style="color: #735656;">
+            </div>
+          </div>
+          <div class="form-group" style="color: #735656;">
+            <label for="inputEmail4" style="color: #735656;">Email</label>
+            <input type="email" class="form-control" id="inputEmail4" placeholder="Email" style="color: #735656;">
+          </div>
+          <div class="form-row row justify-content-center">
+            <div class="form-group col-md-6" style="color: #735656;">
+              <label for="inputDate" style="color: #735656;">Date</label>
+              <input type="date" class="form-control" id="inputDate" style="color: #735656;">
+            </div>
+            <div class="form-group col-md-2" style="color: #735656;">
+              <label for="inputTime" style="color: #735656;">Time</label>
+              <input type="time" class="form-control" id="inputTime" style="color: #735656;">
+            </div>
+            <div class="form-group col-md-4" style="color: #735656;">
+              <label for="inputArtist" style="color: #735656;">Artist</label>
+              <select id="inputArtist" class="form-control" style="color: #735656;">
+                <option selected style="color: #735656;">Choose...</option>
+                <option style="color: #735656;">Brenda</option>
+                <option style="color: #735656;">Ellie</option>
+                <option style="color: #735656;">Kelly</option>
+              </select>
+            </div>
+            <div class="form-group col-md-4" style="color: #735656;">
+              <label for="inputState1" style="color: #735656;">Service 1</label>
+              <select id="inputState1" class="form-control" style="color: #735656;">
+                <option selected style="color: #735656;">Choose...</option>
+                <option style="color: #735656;">Mud Mask</option>
+                <option style="color: #735656;">Collagen Mask</option>
+                <option style="color: #735656;">Skin Care</option>
+                <option style="color: #735656;">Acne Treatment</option>
+                <option style="color: #735656;">Aging</option>
+                <option style="color: #735656;">Botox</option>
+                <option style="color: #735656;">Full Foil</option>
+                <option style="color: #735656;">Highlights</option>
+                <option style="color: #735656;">Trim</option>
+                <option style="color: #735656;">Wash and Style</option>
+                <option style="color: #735656;">Cut and Style</option>
+                <option style="color: #735656;">Toner and Bleach</option>
+                <option style="color: #735656;">Lashes</option>
+                <option style="color: #735656;">Lash Lift</option>
+                <option style="color: #735656;">Brow Lamination</option>
+                <option style="color: #735656;">Extentions</option>
+                <option style="color: #735656;">Tinting</option>
+                <option style="color: #735656;">Brow Shaping</option>
+                <option style="color: #735656;">Gel</option>
+                <option style="color: #735656;">Acrylics</option>
+                <option style="color: #735656;">Polish</option>
+                <option style="color: #735656;">Pedicure</option>
+                <option style="color: #735656;">Extentions</option>
+                <option style="color: #735656;">Mani and Pedi</option>
+              </select>
+            </div>
+            <div class="form-group col-md-4" style="color: #735656;">
+              <label for="inputState2" style="color: #735656;">Service 2</label>
+              <select id="inputState2" class="form-control" style="color: #735656;">
+                <option selected style="color: #735656;">Choose...</option>
+                <option style="color: #735656;">Mud Mask</option>
+                <option style="color: #735656;">Collagen Mask</option>
+                <option style="color: #735656;">Skin Care</option>
+                <option style="color: #735656;">Acne Treatment</option>
+                <option style="color: #735656;">Aging</option>
+                <option style="color: #735656;">Botox</option>
+                <option style="color: #735656;">Full Foil</option>
+                <option style="color: #735656;">Highlights</option>
+                <option style="color: #735656;">Trim</option>
+                <option style="color: #735656;">Wash and Style</option>
+                <option style="color: #735656;">Cut and Style</option>
+                <option style="color: #735656;">Toner and Bleach</option>
+                <option style="color: #735656;">Lashes</option>
+                <option style="color: #735656;">Lash Lift</option>
+                <option style="color: #735656;">Brow Lamination</option>
+                <option style="color: #735656;">Extentions</option>
+                <option style="color: #735656;">Tinting</option>
+                <option style="color: #735656;">Brow Shaping</option>
+                <option style="color: #735656;">Gel</option>
+                <option style="color: #735656;">Acrylics</option>
+                <option style="color: #735656;">Polish</option>
+                <option style="color: #735656;">Pedicure</option>
+                <option style="color: #735656;">Extentions</option>
+                <option style="color: #735656;">Mani and Pedi</option>
+              </select>
+            </div>
+            <div class="form-group col-md-4" style="color: #735656;">
+              <label for="inputState3" style="color: #735656;">Service 3</label>
+              <select id="inputState3" class="form-control" style="color: #735656;">
+                <option selected style="color: #735656;">Choose...</option>
+                <option style="color: #735656;">Mud Mask</option>
+                <option style="color: #735656;">Collagen Mask</option>
+                <option style="color: #735656;">Skin Care</option>
+                <option style="color: #735656;">Acne Treatment</option>
+                <option style="color: #735656;">Aging</option>
+                <option style="color: #735656;">Botox</option>
+                <option style="color: #735656;">Full Foil</option>
+                <option style="color: #735656;">Highlights</option>
+                <option style="color: #735656;">Trim</option>
+                <option style="color: #735656;">Wash and Style</option>
+                <option style="color: #735656;">Cut and Style</option>
+                <option style="color: #735656;">Toner and Bleach</option>
+                <option style="color: #735656;">Lashes</option>
+                <option style="color: #735656;">Lash Lift</option>
+                <option style="color: #735656;">Brow Lamination</option>
+                <option style="color: #735656;">Extentions</option>
+                <option style="color: #735656;">Tinting</option>
+                <option style="color: #735656;">Brow Shaping</option>
+                <option style="color: #735656;">Gel</option>
+                <option style="color: #735656;">Acrylics</option>
+                <option style="color: #735656;">Polish</option>
+                <option style="color: #735656;">Pedicure</option>
+                <option style="color: #735656;">Extentions</option>
+                <option style="color: #735656;">Mani and Pedi</option>
+              </select>
+            </div>
+          </div>
+          <div class="form-group" style="color: #735656;">
+            <label for="inputRequest" style="color: #735656;">Special Requests</label>
+            <input type="text" class="form-control" id="inputRequest" placeholder="Special requests or accomodations" style="color: #735656;">
+          </div>
+          <button type="button" class="btn btn-tertiary" style="color: #735656;" id="BookNow" onclick="openConfirmation()">Book Now!</button>
+        </form>
+      </div>
+
+  
+      </div>
+      </div>
+      
+    </div>
+  </section>
+  <div id="overlay" class="overlay"></div>
+
+  <div id="customConfirmation" class="custom-confirmation">
+    <span class="close-button" onclick="closeConfirmation()">x</span>
+    <p id="confirmationText">Do you want to confirm the booking?</p>
+    <div class="buttons">
+        <button onclick="confirmBooking()">Book Now!</button>
+        <button onclick="cancelBooking()">Cancel</button>
+    </div>
+  </div>
+  <div id="bookingDetails" class="custom-confirmation" style="display: none;">
+    <span class="close-button" onclick="closeBookingDetails()">x</span>
+        <p id="bookingInfo"></p>
+</div>
+
+   <!-- Booking End -->
+   <footer class="footer">
+    <div class="container22">
+        <div class="row">
+            <div class="col-md-4">
+                <img src="assets/logo.png" alt="Company Logo" class="footer-logo">
+            </div>
+            <div class="col-md-4">
+                <h5>Operating Hours</h5>
+                <p>Monday - Friday: 10am - 7pm</p>
+                <p>Saturday: 11am - 9pm</p>
+                <p>Sunday: Closed</p>
+            </div>
+            <div class="col-md-4">
+                <h5>Contact Information</h5>
+                <p>Address: 123 Street ON, A1B 2C3</p>
+                <p>Phone: (613) 123-1234</p>
+                <p>Email: mimisalon@gmail.com</p>
+                <p>instagram: @mimisalon</p>
+            </div>
+        </div>
+    </div>
+</footer>
+
+
+   <script>
+        function openConfirmation() {
+            document.getElementById('overlay').style.display = 'block';
+            document.getElementById('customConfirmation').style.display = 'block';
+        }
+
+        function closeConfirmation() {
+            document.getElementById('overlay').style.display = 'none';
+            document.getElementById('customConfirmation').style.display = 'none';
+        }
+
+        function confirmBooking() {
+            var artist = document.getElementById('inputArtist').value;
+            var date = document.getElementById('inputDate').value;
+            var time = document.getElementById('inputTime').value;
+            var txt = "Your booking has been confirmed! \nDate: " + date + "\nTime: " + time + "\nArtist: " + artist + "\nSee you soon!";
+            document.getElementById('bookingInfo').innerText = txt;
+            document.getElementById('bookingDetails').style.display = 'block';
+            closeConfirmation();
+        }
+        function cancelBooking() {
+            var txt = "Your booking was cancelled";
+            document.getElementById('bookingInfo').innerText = txt;
+            document.getElementById('bookingDetails').style.display = 'block';
+            closeConfirmation();
+            closeConfirmation();
+        }
+        function closeBookingDetails() {
+            document.getElementById('bookingDetails').style.display = 'none';
+        }
+
+        function scrollToSection(sectionId) {
+            var section = document.getElementById(sectionId);
+            section.scrollIntoView({ behavior: 'smooth' });
+        }
+
+
+
+   </script>
+
+
+ </div>
+
+  </div>
+  </body>
+  
+</html>
